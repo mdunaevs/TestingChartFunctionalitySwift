@@ -75,8 +75,9 @@ class ViewController: UIViewController {
         pieView.chartDescription?.enabled = false
         // No hole in the center. You can change size of hole
         pieView.drawHoleEnabled = true
-        pieView.holeRadiusPercent = 0.50
-        pieView.animate(xAxisDuration: 1)
+        pieView.holeRadiusPercent = 0.35
+        //pieView.legend.enabled = false
+        pieView.animate(xAxisDuration: 3)
         pieView.rotationAngle = 0
         pieView.rotationEnabled = true
         pieView.isUserInteractionEnabled = true
