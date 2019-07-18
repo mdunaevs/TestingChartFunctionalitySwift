@@ -26,7 +26,14 @@ class ViewController: UIViewController {
         var task8 = Task(name: "Computer Science HW", time: "9am - 11am", category: .academic)
         var task9 = Task(name: "CS OH", time: "9am - 11am", category: .events)
         var task10 = Task(name: "Laundry", time: "9am - 11am", category: .other)
-        
+        var task11 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
+        var task12 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
+        var task13 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
+        var task14 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
+        var task15 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
+        var task16 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
+        var task17 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
+        var task18 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
         taskList.append(task1)
         taskList.append(task2)
         taskList.append(task3)
@@ -37,6 +44,15 @@ class ViewController: UIViewController {
         taskList.append(task8)
         taskList.append(task9)
         taskList.append(task10)
+        taskList.append(task11)
+        taskList.append(task12)
+        taskList.append(task13)
+        taskList.append(task14)
+        taskList.append(task15)
+        taskList.append(task16)
+        taskList.append(task17)
+        taskList.append(task18)
+        
         
     }
 
@@ -76,7 +92,7 @@ class ViewController: UIViewController {
         // No hole in the center. You can change size of hole
         pieView.drawHoleEnabled = true
         pieView.holeRadiusPercent = 0.35
-        //pieView.legend.enabled = false
+        pieView.legend.enabled = false
         pieView.animate(xAxisDuration: 3)
         pieView.rotationAngle = 0
         pieView.rotationEnabled = true
