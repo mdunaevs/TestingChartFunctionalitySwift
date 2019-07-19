@@ -56,6 +56,9 @@
                                 <rect key="frame" x="158" y="693" width="98" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="no-fill.png"/>
+                                <connections>
+                                    <segue destination="NoY-SH-8DI" kind="show" id="NDM-eB-jEm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVi-fQ-vzH">
                                 <rect key="frame" x="183" y="683" width="53" height="21"/>
@@ -82,6 +85,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Task List View Controller-->
+        <scene sceneID="HND-nl-dag">
+            <objects>
+                <viewController id="NoY-SH-8DI" customClass="TaskListViewController" customModule="testingCharts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cBS-Dz-1lS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y0D-1h-bc1">
+                                <rect key="frame" x="0.0" y="194" width="414" height="668"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" id="99Q-6X-Of6" customClass="TaskListTableViewCell" customModule="testingCharts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="99Q-6X-Of6" id="arU-um-oqm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCO-Zl-gHd">
+                                                    <rect key="frame" x="348" y="6" width="46" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0Q-QO-2if">
+                                                    <rect key="frame" x="142" y="11" width="158" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GqA-Hn-w6S">
+                                                    <rect key="frame" x="30" y="6" width="55" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="taskFinishedBtn" destination="GqA-Hn-w6S" id="XU6-BM-qPL"/>
+                                            <outlet property="taskImage" destination="nCO-Zl-gHd" id="T4Z-B7-aBU"/>
+                                            <outlet property="taskName" destination="d0Q-QO-2if" id="4sB-zx-tO0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NoY-SH-8DI" id="pfE-qX-hdO"/>
+                                    <outlet property="delegate" destination="NoY-SH-8DI" id="NmJ-0f-MtN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y0D-1h-bc1" firstAttribute="top" secondItem="rsd-Pg-Euq" secondAttribute="top" id="31v-xc-MbP"/>
+                            <constraint firstItem="rsd-Pg-Euq" firstAttribute="bottom" secondItem="Y0D-1h-bc1" secondAttribute="bottom" id="QdD-bk-2xY"/>
+                            <constraint firstItem="Y0D-1h-bc1" firstAttribute="leading" secondItem="rsd-Pg-Euq" secondAttribute="leading" id="cRT-IV-Xzi"/>
+                            <constraint firstItem="rsd-Pg-Euq" firstAttribute="trailing" secondItem="Y0D-1h-bc1" secondAttribute="trailing" id="hsS-H3-1Pq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rsd-Pg-Euq"/>
+                    </view>
+                    <connections>
+                        <outlet property="taskTableView" destination="Y0D-1h-bc1" id="Nrv-UB-cWb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2a5-yd-6C7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1378.2608695652175" y="126.5625"/>
         </scene>
         <!--Add Task View Controller-->
         <scene sceneID="SuR-4D-4yO">
