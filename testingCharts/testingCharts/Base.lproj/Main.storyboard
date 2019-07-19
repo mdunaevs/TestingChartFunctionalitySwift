@@ -46,6 +46,7 @@
                                         <state key="normal" title="Add"/>
                                         <connections>
                                             <action selector="addTaskPrompter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R9i-I1-gUr"/>
+                                            <segue destination="K24-67-gkJ" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="vj3-1d-qIY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -81,6 +82,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Add Task View Controller-->
+        <scene sceneID="SuR-4D-4yO">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="K24-67-gkJ" customClass="AddTaskViewController" customModule="testingCharts" customModuleProvider="target" sceneMemberID="viewController">
+                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="Zy8-wu-dgO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p1H-vA-FRo">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dx-gV-4GW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="dismissPopup:" destination="K24-67-gkJ" eventType="touchUpInside" id="Fda-jX-HHa"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wX6-XH-pPd">
+                                    <rect key="frame" x="47.5" y="289" width="319" height="318"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="Dnk-vM-395">
+                                            <rect key="frame" x="60" y="19" width="199" height="280"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EE-c4-eVt">
+                                                    <rect key="frame" x="50" y="0.0" width="99" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Task Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gz1-NG-LGz">
+                                                    <rect key="frame" x="13.5" y="73" width="172" height="44"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Task Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cNW-kj-32Q">
+                                                    <rect key="frame" x="14" y="160" width="171" height="47"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k83-tG-x6A">
+                                                    <rect key="frame" x="84.5" y="250" width="30" height="30"/>
+                                                    <state key="normal" title="Add"/>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Dnk-vM-395" firstAttribute="leading" secondItem="wX6-XH-pPd" secondAttribute="leading" constant="60" id="Hgn-kP-PNk"/>
+                                        <constraint firstItem="Dnk-vM-395" firstAttribute="leading" secondItem="wX6-XH-pPd" secondAttribute="leading" constant="60" id="Wh6-3s-4H3"/>
+                                        <constraint firstAttribute="width" constant="319" id="X8p-jT-Cpo"/>
+                                        <constraint firstAttribute="trailing" secondItem="Dnk-vM-395" secondAttribute="trailing" constant="60" id="gZk-02-JZ4"/>
+                                        <constraint firstAttribute="trailing" secondItem="Dnk-vM-395" secondAttribute="trailing" constant="60" id="gd6-5E-ULH"/>
+                                        <constraint firstItem="Dnk-vM-395" firstAttribute="centerY" secondItem="wX6-XH-pPd" secondAttribute="centerY" id="lOi-IT-MFT"/>
+                                        <constraint firstAttribute="height" constant="318" id="qus-uo-wgs"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="6Dx-gV-4GW" secondAttribute="trailing" id="DsK-YU-lnS"/>
+                                <constraint firstItem="6Dx-gV-4GW" firstAttribute="top" secondItem="p1H-vA-FRo" secondAttribute="top" id="NMG-dN-RR7"/>
+                                <constraint firstAttribute="bottom" secondItem="6Dx-gV-4GW" secondAttribute="bottom" id="dOy-ps-rzT"/>
+                                <constraint firstItem="6Dx-gV-4GW" firstAttribute="leading" secondItem="p1H-vA-FRo" secondAttribute="leading" id="evu-9g-0tK"/>
+                                <constraint firstItem="wX6-XH-pPd" firstAttribute="centerX" secondItem="p1H-vA-FRo" secondAttribute="centerX" id="jkL-MU-U9M"/>
+                                <constraint firstItem="wX6-XH-pPd" firstAttribute="centerY" secondItem="p1H-vA-FRo" secondAttribute="centerY" id="mZT-3D-fwk"/>
+                            </constraints>
+                        </view>
+                        <blurEffect style="light"/>
+                    </visualEffectView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jjv-Z7-bIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="839.73214285714278"/>
         </scene>
     </scenes>
     <resources>

@@ -140,7 +140,7 @@ class ViewController: UIViewController {
         pieView.drawHoleEnabled = true
         pieView.holeRadiusPercent = 0.35
         pieView.legend.enabled = false
-        pieView.animate(xAxisDuration: 3)
+        pieView.animate(xAxisDuration: 2)
         pieView.rotationAngle = 0
         pieView.rotationEnabled = true
         pieView.isUserInteractionEnabled = true
@@ -162,7 +162,6 @@ class ViewController: UIViewController {
             pieView.legend.enabled = true
             pieView.drawEntryLabelsEnabled = false
         }
-        
         pieView.data = PieChartData(dataSet: dataSet)
     }
 

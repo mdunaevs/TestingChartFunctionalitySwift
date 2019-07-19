@@ -25,6 +25,7 @@
 		506A869322E0D17900DBD771 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A869222E0D17900DBD771 /* TaskList.swift */; };
 		50F8002522E152FD000E4691 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F8002422E152FD000E4691 /* SwiftyJSON.framework */; };
 		50F8003322E15CEA000E4691 /* taskData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50F8003222E15CEA000E4691 /* taskData.txt */; };
+		50F8003522E18DB8000E4691 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8003422E18DB8000E4691 /* AddTaskViewController.swift */; };
 		C26377347337887FDE1E83C9 /* Pods_testingChartsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC00C89DDA4705D50D9BF1B /* Pods_testingChartsTests.framework */; };
 		ECEA961F6F5F5DB351BE4153 /* Pods_testingCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68F049E87AFE952E9C89D72 /* Pods_testingCharts.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		506A869222E0D17900DBD771 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		50F8002422E152FD000E4691 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F8003222E15CEA000E4691 /* taskData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = taskData.txt; path = ../../../../taskData.txt; sourceTree = "<group>"; };
+		50F8003422E18DB8000E4691 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		7B4135ABF5F260D7AD5C15F7 /* Pods-testingChartsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testingChartsTests.release.xcconfig"; path = "Target Support Files/Pods-testingChartsTests/Pods-testingChartsTests.release.xcconfig"; sourceTree = "<group>"; };
 		88C06DF748C23A3A18DFFA53 /* Pods-testingCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testingCharts.release.xcconfig"; path = "Target Support Files/Pods-testingCharts/Pods-testingCharts.release.xcconfig"; sourceTree = "<group>"; };
 		B68F049E87AFE952E9C89D72 /* Pods_testingCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testingCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,7 @@
 				506A868D22DFEB9B00DBD771 /* profile.png */,
 				506A863222DEEE0B00DBD771 /* LaunchScreen.storyboard */,
 				506A863522DEEE0B00DBD771 /* Info.plist */,
+				50F8003422E18DB8000E4691 /* AddTaskViewController.swift */,
 			);
 			path = testingCharts;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				506A864C22DEF8BF00DBD771 /* Task.swift in Sources */,
+				50F8003522E18DB8000E4691 /* AddTaskViewController.swift in Sources */,
 				506A869322E0D17900DBD771 /* TaskList.swift in Sources */,
 				506A864A22DEF2DA00DBD771 /* NSUIColor+Hex.swift in Sources */,
 				506A862C22DEEE0900DBD771 /* ViewController.swift in Sources */,
