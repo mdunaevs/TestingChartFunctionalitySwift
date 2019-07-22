@@ -12,7 +12,7 @@ import SwiftyJSON
 
 
 
-class ViewController: UIViewController {
+class HomePageViewController: UIViewController {
 
     @IBOutlet weak var pieView: PieChartView!
     

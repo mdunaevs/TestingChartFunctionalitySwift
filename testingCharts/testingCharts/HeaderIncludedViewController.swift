@@ -30,24 +30,23 @@ class HeaderIncludedViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tasklistTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tasklistTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewHeaderIncludedCell
         cell.backgroundColor = UIColor(named: determineBackgroundColor(task: tempTask.listOfTasks[indexPath.row]))
-        if let nameLabel = cell.contentView.viewWithTag(101) as? UILabel{
-            nameLabel.text = tempTask.listOfTasks[indexPath.row].name
-        }
+        
+        cell.cellLabel?.text = tempTask.listOfTasks[indexPath.row].name
+        
         if let btnFinished = cell.contentView.viewWithTag(102) as? UIButton {
             btnFinished.addTarget(self, action: #selector(deleteRow(_:)), for: .touchUpInside)
         }
-        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 75
     }
+
     
-    @objc func deleteRow(_ sender: UIButton){
-        print("went inside func")
+   @objc func deleteRow(_ sender: UIButton){
         let point = sender.convert(CGPoint.zero, to: tasklistTable)
         guard let indexPath = tasklistTable.indexPathForRow(at: point) else {
             return

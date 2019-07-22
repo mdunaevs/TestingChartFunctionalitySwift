@@ -10,6 +10,9 @@ import Foundation
 
 import UIKit
 
-class TasbleViewHeaderIncludedCell: UITableViewCell{
+class TableViewHeaderIncludedCell: UITableViewCell{
+    
+    
+    @IBOutlet weak var cellLabel: UILabel!
     
 }

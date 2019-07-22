@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		506A862A22DEEE0900DBD771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A862922DEEE0900DBD771 /* AppDelegate.swift */; };
-		506A862C22DEEE0900DBD771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A862B22DEEE0900DBD771 /* ViewController.swift */; };
+		506A862C22DEEE0900DBD771 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A862B22DEEE0900DBD771 /* HomePageViewController.swift */; };
 		506A862F22DEEE0900DBD771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506A862D22DEEE0900DBD771 /* Main.storyboard */; };
 		506A863122DEEE0B00DBD771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506A863022DEEE0B00DBD771 /* Assets.xcassets */; };
 		506A863422DEEE0B00DBD771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506A863222DEEE0B00DBD771 /* LaunchScreen.storyboard */; };
@@ -30,6 +30,10 @@
 		50F8007322E2B822000E4691 /* MultiTaskListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8007222E2B822000E4691 /* MultiTaskListViewCell.swift */; };
 		50F8007D22E58F45000E4691 /* HeaderIncludedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8007C22E58F45000E4691 /* HeaderIncludedViewController.swift */; };
 		50F8008122E59664000E4691 /* HeaderIncludedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8008022E59664000E4691 /* HeaderIncludedViewCell.swift */; };
+		50F8008922E59EF2000E4691 /* upward-pointed-arrow-symbols-icons-72768.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F8008822E59EF2000E4691 /* upward-pointed-arrow-symbols-icons-72768.png */; };
+		50F8008B22E59F5D000E4691 /* upward_version.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F8008A22E59F5D000E4691 /* upward_version.png */; };
+		50F8008D22E5A038000E4691 /* upwards-2sided.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F8008C22E5A037000E4691 /* upwards-2sided.png */; };
+		50F8008F22E5A065000E4691 /* downward-2sided.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F8008E22E5A065000E4691 /* downward-2sided.png */; };
 		C26377347337887FDE1E83C9 /* Pods_testingChartsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC00C89DDA4705D50D9BF1B /* Pods_testingChartsTests.framework */; };
 		ECEA961F6F5F5DB351BE4153 /* Pods_testingCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68F049E87AFE952E9C89D72 /* Pods_testingCharts.framework */; };
 /* End PBXBuildFile section */
@@ -49,7 +53,7 @@
 		2FC00C89DDA4705D50D9BF1B /* Pods_testingChartsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testingChartsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		506A862622DEEE0900DBD771 /* testingCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testingCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506A862922DEEE0900DBD771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		506A862B22DEEE0900DBD771 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		506A862B22DEEE0900DBD771 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		506A862E22DEEE0900DBD771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		506A863022DEEE0B00DBD771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506A863322DEEE0B00DBD771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +78,10 @@
 		50F8007222E2B822000E4691 /* MultiTaskListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiTaskListViewCell.swift; sourceTree = "<group>"; };
 		50F8007C22E58F45000E4691 /* HeaderIncludedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderIncludedViewController.swift; sourceTree = "<group>"; };
 		50F8008022E59664000E4691 /* HeaderIncludedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderIncludedViewCell.swift; sourceTree = "<group>"; };
+		50F8008822E59EF2000E4691 /* upward-pointed-arrow-symbols-icons-72768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upward-pointed-arrow-symbols-icons-72768.png"; path = "../../../../../Downloads/upward-pointed-arrow-symbols-icons-72768.png"; sourceTree = "<group>"; };
+		50F8008A22E59F5D000E4691 /* upward_version.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = upward_version.png; path = ../../../../../Downloads/upward_version.png; sourceTree = "<group>"; };
+		50F8008C22E5A037000E4691 /* upwards-2sided.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upwards-2sided.png"; path = "../../../../../Downloads/upwards-2sided.png"; sourceTree = "<group>"; };
+		50F8008E22E5A065000E4691 /* downward-2sided.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "downward-2sided.png"; path = "../../../../../Downloads/downward-2sided.png"; sourceTree = "<group>"; };
 		7B4135ABF5F260D7AD5C15F7 /* Pods-testingChartsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testingChartsTests.release.xcconfig"; path = "Target Support Files/Pods-testingChartsTests/Pods-testingChartsTests.release.xcconfig"; sourceTree = "<group>"; };
 		88C06DF748C23A3A18DFFA53 /* Pods-testingCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testingCharts.release.xcconfig"; path = "Target Support Files/Pods-testingCharts/Pods-testingCharts.release.xcconfig"; sourceTree = "<group>"; };
 		B68F049E87AFE952E9C89D72 /* Pods_testingCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testingCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,7 +145,7 @@
 				506A862922DEEE0900DBD771 /* AppDelegate.swift */,
 				506A864B22DEF8BF00DBD771 /* Task.swift */,
 				506A869222E0D17900DBD771 /* TaskList.swift */,
-				506A862B22DEEE0900DBD771 /* ViewController.swift */,
+				506A862B22DEEE0900DBD771 /* HomePageViewController.swift */,
 				50F8003422E18DB8000E4691 /* AddTaskViewController.swift */,
 				50F8007022E2B691000E4691 /* MultiTaskListViewController.swift */,
 				50F8007222E2B822000E4691 /* MultiTaskListViewCell.swift */,
@@ -150,7 +158,11 @@
 				506A868122DFD80600DBD771 /* down-arrow-circle.png */,
 				506A868722DFE6BC00DBD771 /* home (1).png */,
 				506A868922DFE83900DBD771 /* friend.png */,
+				50F8008E22E5A065000E4691 /* downward-2sided.png */,
 				506A868B22DFE96E00DBD771 /* cup.png */,
+				50F8008822E59EF2000E4691 /* upward-pointed-arrow-symbols-icons-72768.png */,
+				50F8008C22E5A037000E4691 /* upwards-2sided.png */,
+				50F8008A22E59F5D000E4691 /* upward_version.png */,
 				506A868D22DFEB9B00DBD771 /* profile.png */,
 				506A863222DEEE0B00DBD771 /* LaunchScreen.storyboard */,
 				506A863522DEEE0B00DBD771 /* Info.plist */,
@@ -264,10 +276,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F8008F22E5A065000E4691 /* downward-2sided.png in Resources */,
 				506A868C22DFE96E00DBD771 /* cup.png in Resources */,
 				506A867C22DFCEB200DBD771 /* homeScreenBackground.png in Resources */,
 				506A868222DFD80700DBD771 /* down-arrow-circle.png in Resources */,
 				506A868E22DFEB9B00DBD771 /* profile.png in Resources */,
+				50F8008922E59EF2000E4691 /* upward-pointed-arrow-symbols-icons-72768.png in Resources */,
+				50F8008D22E5A038000E4691 /* upwards-2sided.png in Resources */,
 				506A868822DFE6BC00DBD771 /* home (1).png in Resources */,
 				506A863422DEEE0B00DBD771 /* LaunchScreen.storyboard in Resources */,
 				506A868422DFD96D00DBD771 /* no-fill.png in Resources */,
@@ -275,6 +290,7 @@
 				50F8003322E15CEA000E4691 /* taskData.txt in Resources */,
 				506A863122DEEE0B00DBD771 /* Assets.xcassets in Resources */,
 				506A862F22DEEE0900DBD771 /* Main.storyboard in Resources */,
+				50F8008B22E59F5D000E4691 /* upward_version.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +380,7 @@
 				50F8008122E59664000E4691 /* HeaderIncludedViewCell.swift in Sources */,
 				506A864A22DEF2DA00DBD771 /* NSUIColor+Hex.swift in Sources */,
 				50F8007122E2B691000E4691 /* MultiTaskListViewController.swift in Sources */,
-				506A862C22DEEE0900DBD771 /* ViewController.swift in Sources */,
+				506A862C22DEEE0900DBD771 /* HomePageViewController.swift in Sources */,
 				506A862A22DEEE0900DBD771 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
