@@ -8,7 +8,6 @@
 
 import UIKit
 import Charts
-import SwiftyJSON
 
 
 
@@ -56,48 +55,6 @@ class HomePageViewController: UIViewController {
             }
         }
     }
-
-    /*func buildTaskList(){
-        
-        let task1 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
-        let task2 = Task(name: "Physics Lecture", time: "9am - 11am", category: .academic)
-        let task3 = Task(name: "Math HW", time: "9am - 11am", category: .academic)
-        let task4 = Task(name: "DFA meeting", time: "9am - 11am", category: .social)
-        let task5 = Task(name: "Dentist appointment", time: "9am - 11am", category: .health)
-        let task6 = Task(name: "Robotics meeting", time: "9am - 11am", category: .social)
-        let task7 = Task(name: "Math OH", time: "9am - 11am", category: .events)
-        let task8 = Task(name: "Computer Science HW", time: "9am - 11am", category: .academic)
-        let task9 = Task(name: "CS OH", time: "9am - 11am", category: .events)
-        let task10 = Task(name: "Laundry", time: "9am - 11am", category: .other)
-        let task11 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
-        let task12 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
-        let task13 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
-        let task14 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
-        let task15 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
-        let task16 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
-        let task17 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
-        let task18 = Task(name: "Physics HW", time: "9am - 11am", category: .academic)
-        
-        taskList.addTask(task: task1)
-        taskList.addTask(task: task2)
-        taskList.addTask(task: task3)
-        taskList.addTask(task: task4)
-        taskList.addTask(task: task5)
-        taskList.addTask(task: task6)
-        taskList.addTask(task: task7)
-        taskList.addTask(task: task8)
-        taskList.addTask(task: task9)
-        taskList.addTask(task: task10)
-        taskList.addTask(task: task11)
-        taskList.addTask(task: task12)
-        taskList.addTask(task: task13)
-        taskList.addTask(task: task14)
-        taskList.addTask(task: task15)
-        taskList.addTask(task: task16)
-        taskList.addTask(task: task17)
-        taskList.addTask(task: task18)
-        taskList.removeTask(task: task1)
-    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
