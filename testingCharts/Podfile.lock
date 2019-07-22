@@ -2,17 +2,44 @@ PODS:
   - Charts (3.3.0):
     - Charts/Core (= 3.3.0)
   - Charts/Core (3.3.0)
+  - CoreXLSX (0.8.0):
+    - XMLCoder (~> 0.7.0)
+    - ZIPFoundation (~> 0.9.9)
+  - Realm (3.17.1):
+    - Realm/Headers (= 3.17.1)
+  - Realm/Headers (3.17.1)
+  - RealmSwift (3.17.1):
+    - Realm (= 3.17.1)
+  - SwiftyJSON (5.0.0)
+  - XMLCoder (0.7.0)
+  - ZIPFoundation (0.9.9)
 
 DEPENDENCIES:
   - Charts
+  - CoreXLSX
+  - Realm
+  - RealmSwift
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Charts
+    - CoreXLSX
+    - Realm
+    - RealmSwift
+    - SwiftyJSON
+    - XMLCoder
+    - ZIPFoundation
 
 SPEC CHECKSUMS:
   Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
+  CoreXLSX: 8d8aef0341b145d8dd7c5c2b2ca6aac912dabae7
+  Realm: c204f1a890f07dea43b14132a6aad118c054b8f2
+  RealmSwift: 4d3c9233544b9cd08a8913e0872b9038eb99b054
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  XMLCoder: 6c31ac37631628912c5afe51adce692b5748841f
+  ZIPFoundation: 89df685c971926b0323087952320bdfee9f0b6ef
 
-PODFILE CHECKSUM: f044959980afd46a58992c69c7fc4a4ad5d5e63d
+PODFILE CHECKSUM: f7780c7a7592194aa3ec8ff32ed7a5e9be5fa5c0
 
 COCOAPODS: 1.7.4

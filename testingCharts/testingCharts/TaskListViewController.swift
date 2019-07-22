@@ -8,14 +8,15 @@
 
 import UIKit
 
-class TaskListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TaskListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var tempTask = TaskList(listOfTasks: [
         Task(name: "Physics HW", time: "9am", category: .academic),
         Task(name: "Doctor appointment", time: "3pm", category: .health),
         Task(name: "Math club meeting", time: "6pm", category: .social)
         ])
-    
-    @IBOutlet weak var taskTableView: UITableView!
+
+
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tempTask.listOfTasks.count
@@ -24,22 +25,30 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = taskTableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskListTableViewCell
         cell.taskName.text = tempTask.listOfTasks[indexPath.row].name
-        //cell.taskName.frame = CGRect(x: <#T##Int#>, y: <#T##Int#>, width: <#T##Int#>, height: <#T##Int#>)
+        cell.backgroundColor = UIColor(named: determineBackgroundColor(task: tempTask.listOfTasks[indexPath.row]))
         
         return cell
     }
     
-   /* optional func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-        
-    }*/
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    func determineBackgroundColor(task: Task) -> String{
+        if(task.category == .academic){
+            return "academicColor"
+        } else if(task.category == .social){
+            return "socialColor"
+        }else if(task.category == .health){
+            return "healthColor"
+        }else if(task.category == .events){
+            return "eventsColor"
+        }
+        return "otherColor"
+    }
     
+   
 
 }

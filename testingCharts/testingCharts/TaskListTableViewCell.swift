@@ -10,10 +10,6 @@ import UIKit
 
 class TaskListTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var taskImage: UIButton!
-    @IBOutlet weak var taskName: UILabel!
-    @IBOutlet weak var taskFinishedBtn: UIImageView!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
