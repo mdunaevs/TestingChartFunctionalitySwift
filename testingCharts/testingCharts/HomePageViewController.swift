@@ -36,6 +36,7 @@ class HomePageViewController: UIViewController {
                     let taskName = taskArray[0]
                     let taskTime = taskArray[1]
                     let taskCategory = taskArray[2]
+                    //let taskCategory = autoCat(taskName)
                     var task: Task
                     if(taskCategory == "academic"){
                         task = Task(name: taskName, time: taskTime, category: .academic)
